@@ -17,6 +17,7 @@ if __name__ == '__main__':
         )
 
     backend_api  = Backend_Api(app, config)
+    
     for route in backend_api.routes:
         app.add_url_rule(
             route,
